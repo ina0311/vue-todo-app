@@ -4,8 +4,8 @@ import { fetchItems } from "../../utils/http";
 export default createStore({
   state() {
     return {
-      categorylist: [],
-      cardlist: []
+      categoryList: [],
+      cardList: []
     }
   },
   mutations: {
