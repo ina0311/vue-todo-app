@@ -1,4 +1,5 @@
 import { createStore } from "vuex";
+import { fetchItems } from "../../utils/http";
 
 export default createStore({
   state() {
