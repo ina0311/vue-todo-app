@@ -14,6 +14,16 @@
       "id": 3,
       "text": "起きる",
       "categoryId": 2
+    },
+    {
+      "text": "",
+      "categoryId": 2,
+      "id": 4
+    },
+    {
+      "text": "23431",
+      "categoryId": 2,
+      "id": 5
     }
   ],
   "categories": [

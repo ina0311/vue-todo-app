@@ -1,5 +1,5 @@
 import { createStore } from "vuex";
-import { fetchItems } from "../../utils/http";
+import { fetchItems, insertItems } from "../../utils/http";
 
 export default createStore({
   state() {
@@ -24,6 +24,9 @@ export default createStore({
     async fetchCardList(context) {
       const cardList = await fetchItems("http://localhost:3000/todos");
       context.commit("setCardList", cardList);
+    },
+    async addCard(context, data) {
+      await insertItems("http://localhost:3000/todos", data);
     }
   }
 })

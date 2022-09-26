@@ -10,3 +10,18 @@ export const fetchItems = async (url) => {
     console.error(error);
   }
 };
+
+export const insertItems = async (url, data) => {
+  const respose = await fetch(url, {
+    // json形式でPOSTでデータを送る
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json;charset=utf-8'
+    },
+    body: JSON.stringify(data)
+  }).catch(() => {
+    // うまく行かなかった場合、コンソールにエラーを表示
+    console.error(response.json())
+    return;
+  })
+};
